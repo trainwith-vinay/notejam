@@ -14,7 +14,6 @@ Supported frameworks
 **Python**
 
 
-* `Django <https://github.com/nordcloud/notejam/tree/master/django>`_
 * `Flask <https://github.com/nordcloud/notejam/tree/master/flask>`_
 
 
