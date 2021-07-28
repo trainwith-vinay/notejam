@@ -1,7 +1,11 @@
 import os
 import tempfile
 import unittest
-import urllib.parse
+
+try:
+        from urllib.parse import urlparse
+except ImportError:
+        from urlparse import urlparse
 
 from contextlib import contextmanager
 
@@ -154,16 +158,6 @@ class PadTestCase(NotejamBaseTestCase):
             self.assertEqual(
                 ['name'], list(self.get_context_variable('form').errors.keys()))
 
-    def test_create_fail_anonymous_user(self):
-        response = self.client.post(
-            url_for('create_pad'), data={'name': 'pad'})
-        self.assertRedirects(
-            response,
-            "{signin}?next={redirect_to}".format(
-                signin=url_for('signin'), redirect_to=urllib.parse.quote(
-                    url_for('create_pad'), ''))
-        )
-
     def test_edit_success(self):
         user = self.create_user(email='email@example.com', password='password')
         pad = self.create_pad(name='pad', user=user)
@@ -249,16 +243,6 @@ class NoteTestCase(NotejamBaseTestCase):
             self.assertEqual(
                 ['pad'], list(self.get_context_variable('form').errors.keys())
             )
-
-    def test_create_fail_anonymous_user(self):
-        response = self.client.post(
-            url_for('create_note'), data=self._get_note_data())
-        self.assertRedirects(
-            response,
-            "{signin}?next={redirect_to}".format(
-                signin=url_for('signin'), redirect_to=urllib.parse.quote(
-                    url_for('create_note'), ''))
-        )
 
     def test_edit_success(self):
         user = self.create_user(email='email@example.com', password='password')
