@@ -16,26 +16,18 @@ Please prepend commit messages with framework name.
 
     Django: Implemented signout functionality
 
-.. code-block::
-
-    Symfony: Fixed broken pad tests
-
 **Bad** commit messages:
 
 .. code-block::
 
     Implemented signout functionality in django
 
-.. code-block::
-
-    Fixed broken symfony pad tests
-
 
 ==========
 Code style
 ==========
 
-Please follow code style guidelines and best practices for your programming language and framework.
+Please follow code style guidelines and best practices for your framework.
 Specify guidelines in a README file in a code style section.
 
 
@@ -44,7 +36,7 @@ Application overview
 ====================
 
 Notejam is a web application which allows user to sign up/in/out and create/view/edit/delete notes.
-Notes are grouped in pads. See `screenshots <https://github.com/komarserjio/notejam/tree/master/screenshots.rst>`_
+Notes are grouped in pads. See `screenshots <https://github.com/nordcloud/notejam/tree/master/screenshots.rst>`_
 for look and feel.
 
 -----------------------
@@ -57,14 +49,14 @@ Structure of objects (aka models or entities) used in the app:
 * Pad: id, user_id, name
 * User: id, email, password
 
-See recommended `database schema <https://github.com/komarserjio/notejam/tree/master/schema.sql>`_ for details.
+See recommended `database schema <https://github.com/nordcloud/notejam/tree/master/schema.sql>`_ for details.
 
 
 -----
 Pages
 -----
 
-All html layouts are sliced and available in the `html <https://github.com/komarserjio/notejam/tree/master/html>`_ folder.
+All html layouts are sliced and available in the `html <https://github.com/nordcloud/notejam/tree/master/html>`_ folder.
 
 **User pages**
 
