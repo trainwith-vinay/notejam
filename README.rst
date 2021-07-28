@@ -14,8 +14,8 @@ Supported frameworks
 **Python**
 
 
-* `Django <https://github.com/komarserjio/notejam/tree/master/django>`_
-* `Flask <https://github.com/komarserjio/notejam/tree/master/flask>`_
+* `Django <https://github.com/nordcloud/notejam/tree/master/django>`_
+* `Flask <https://github.com/nordcloud/notejam/tree/master/flask>`_
 
 
 ====================
@@ -27,23 +27,23 @@ Notes are grouped in pads.
 
 **Screenshots**
 
-.. image:: https://github.com/komarserjio/notejam/blob/master/html/screenshots/1p.png
+.. image:: https://github.com/nordcloud/notejam/blob/master/html/screenshots/1p.png
     :alt: Sign in
     :width: 400
     :align: center
-    :target: https://github.com/komarserjio/notejam/tree/master/screenshots.rst
+    :target: https://github.com/nordcloud/notejam/tree/master/screenshots.rst
 
-.. image:: https://github.com/komarserjio/notejam/blob/master/html/screenshots/2p.png
+.. image:: https://github.com/nordcloud/notejam/blob/master/html/screenshots/2p.png
     :alt: All notes
     :width: 400
     :align: center
-    :target: https://github.com/komarserjio/notejam/tree/master/screenshots.rst
+    :target: https://github.com/nordcloud/notejam/tree/master/screenshots.rst
 
-.. image:: https://github.com/komarserjio/notejam/blob/master/html/screenshots/3p.png
+.. image:: https://github.com/nordcloud/notejam/blob/master/html/screenshots/3p.png
     :alt: New note
     :width: 400
     :align: center
-    :target: https://github.com/komarserjio/notejam/tree/master/screenshots.rst
+    :target: https://github.com/nordcloud/notejam/tree/master/screenshots.rst
 
 See `more screenshots <https://github.com/nordcloud/notejam/tree/master/screenshots.rst>`_
 for look and feel.
